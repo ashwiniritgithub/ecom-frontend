@@ -1,4 +1,4 @@
-name: Fullstack CI
+name: Fullstack CI (No MongoDB)
 
 on:
   push:
@@ -7,35 +7,33 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-latest
 
-    services:
-      mongo:
-        image: mongo:4.4  # Start MongoDB 4.4 container
-        ports:
-          - 27017:27017   # Expose default MongoDB port
-        options: >-
-          --health-cmd="mongosh --eval 'db.adminCommand(\"ping\")'"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=5
-
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
         node-version: '18'
 
-    - name: Install dependencies
+    # Frontend
+    - name: Install frontend dependencies
       run: npm install
 
-    - name: Build Project
+    - name: Build frontend
       run: npm run build
 
-    - name: Run Tests
-      env:
-        MONGO_URL: mongodb://localhost:27017/testdb
-      run: npm test || echo "No tests yet"
+    - name: Test frontend
+      run: npm test -- --watchAll=false
+
+    # Backend
+    - name: Install backend dependencies
+      working-directory: ./store-api
+      run: npm install
+
+    - name: Test backend
+      working-directory: ./store-api
+      run: npm test
