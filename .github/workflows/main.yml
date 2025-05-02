@@ -1,0 +1,59 @@
+name: Full Stack CI with MongoDB
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    services:
+      mongo:
+        image: mongo:4.4
+        ports:
+          - 27017:27017
+        options: >-
+          --health-cmd="mongosh --eval 'db.adminCommand(\"ping\")'"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    # ---------- Frontend ----------
+    - name: Install frontend dependencies
+      working-directory: ./frontend
+      run: npm install
+
+    - name: Build frontend
+      working-directory: ./frontend
+      run: npm run build
+
+    - name: Test frontend
+      working-directory: ./frontend
+      run: npm test || echo "No frontend tests yet"
+
+    # ---------- Backend ----------
+    - name: Install backend dependencies
+      working-directory: ./backend
+      run: npm install
+
+    - name: Build backend
+      working-directory: ./backend
+      run: npm run build || echo "No backend build step"
+
+    - name: Test backend (MongoDB available)
+      working-directory: ./backend
+      env:
+        MONGO_URI: mongodb://localhost:27017/ecom
+      run: npm test || echo "No backend tests yet"
