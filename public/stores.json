@@ -1,0 +1,93 @@
+[
+    {
+      "storeID": 1,
+      "name": "Classic Margherita Pizza",
+      "logo": "store1.jpg",
+      "category": "Pizza",
+      "deliveryTime": "30 minutes",
+      "rating": 4.8,
+      "reviews": 150
+    },
+    {
+      "storeID": 2,
+      "name": "Sushi House",
+      "logo": "store2.jpg",
+      "category": "Japanese",
+      "deliveryTime": "45 minutes",
+      "rating": 4.7,
+      "reviews": 200
+    },
+    {
+      "storeID": 3,
+      "name": "Burger King",
+      "logo": "store3.jpg",
+      "category": "Fast Food",
+      "deliveryTime": "20 minutes",
+      "rating": 4.3,
+      "reviews": 120
+    },
+    {
+      "storeID": 4,
+      "name": "Italian Delight",
+      "logo": "store4.jpg",
+      "category": "Italian",
+      "deliveryTime": "35 minutes",
+      "rating": 4.9,
+      "reviews": 95
+    },
+    {
+      "storeID": 5,
+      "name": "Taco Bell",
+      "logo": "store5.jpg",
+      "category": "Mexican",
+      "deliveryTime": "25 minutes",
+      "rating": 4.5,
+      "reviews": 180
+    },
+    {
+      "storeID": 6,
+      "name": "Vegan Delight",
+      "logo": "store6.jpg",
+      "category": "Vegan",
+      "deliveryTime": "40 minutes",
+      "rating": 4.6,
+      "reviews": 110
+    },
+    {
+      "storeID": 7,
+      "name": "KFC",
+      "logo": "store7.jpg",
+      "category": "Fast Food",
+      "deliveryTime": "30 minutes",
+      "rating": 4.4,
+      "reviews": 250
+    },
+    {
+      "storeID": 8,
+      "name": "Dim Sum House",
+      "logo": "store8.jpg",
+      "category": "Chinese",
+      "deliveryTime": "50 minutes",
+      "rating": 4.3,
+      "reviews": 130
+    },
+    {
+      "storeID": 9,
+      "name": "Café Coffee Day",
+      "logo": "store9.jpg",
+      "category": "Coffee",
+      "deliveryTime": "20 minutes",
+      "rating": 4.2,
+      "reviews": 75
+    },
+    {
+      "storeID": 10,
+      "name": "The Burger Joint",
+      "logo": "store10.jpg",
+      "category": "Burgers",
+      "deliveryTime": "25 minutes",
+      "rating": 4.6,
+      "reviews": 95
+    }
+  ]
+  

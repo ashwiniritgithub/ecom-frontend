@@ -1,0 +1,50 @@
+{
+    "products": [
+      {
+        "productID": 1,
+        "storeID": 1,
+        "name": "Classic Margherita Pizza",
+        "price": 12.99,
+        "stock": 50,
+        "category": "Pizza",
+        "image": "classic_margherita.jpg"
+      },
+      {
+        "productID": 2,
+        "storeID": 1,
+        "name": "Veggie Supreme Pizza",
+        "price": 14.99,
+        "stock": 30,
+        "category": "Pizza",
+        "image": "veggie_supreme.jpg"
+      },
+      {
+        "productID": 3,
+        "storeID": 2,
+        "name": "California Roll",
+        "price": 8.99,
+        "stock": 40,
+        "category": "Sushi",
+        "image": "california_roll.jpg"
+      },
+      {
+        "productID": 4,
+        "storeID": 2,
+        "name": "Dragon Roll",
+        "price": 9.99,
+        "stock": 25,
+        "category": "Sushi",
+        "image": "dragon_roll.jpg"
+      },
+      {
+        "productID": 5,
+        "storeID": 3,
+        "name": "Whopper Burger",
+        "price": 7.99,
+        "stock": 100,
+        "category": "Fast Food",
+        "image": "whopper_burger.jpg"
+      }
+    ]
+  }
+  

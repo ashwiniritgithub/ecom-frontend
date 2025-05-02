@@ -1,0 +1,479 @@
+{
+    "stores": [
+      {
+        "name": "Store 1",
+        "logo": "store1.jpg",
+        "category": "Biryani",
+        "deliveryTime": "2-3 days",
+        "rating": 4.5,
+        "reviews": 150,
+        "products": [
+          {
+            "productID": 1,
+            "name": "Product 1",
+            "price": 500,
+            "stock": 20,
+            "category": "Electronics",
+            "image": "p3.jpg"
+          },
+          {
+            "productID": 2,
+            "name": "Product 2",
+            "price": 300,
+            "stock": 50,
+            "category": "Electronics",
+            "image": "p4.jpg"
+          },
+          {
+            "productID": 3,
+            "name": "Product 3",
+            "price": 200,
+            "stock": 30,
+            "category": "Electronics",
+            "image": "p5.jpg"
+          },
+          {
+            "productID": 4,
+            "name": "Product 4",
+            "price": 600,
+            "stock": 40,
+            "category": "Electronics",
+            "image": "p6.jpg"
+          },
+          {
+            "productID": 5,
+            "name": "Product 5",
+            "price": 400,
+            "stock": 10,
+            "category": "Electronics",
+            "image": "p7.jpg"
+          },
+          {
+            "productID": 6,
+            "name": "Product 6",
+            "price": 550,
+            "stock": 15,
+            "category": "Electronics",
+            "image": "p7.jpg"
+          },
+          {
+            "productID": 7,
+            "name": "Product 7",
+            "price": 800,
+            "stock": 25,
+            "category": "Electronics",
+            "image": "p8.jpg"
+          },
+          {
+            "productID": 8,
+            "name": "Product 8",
+            "price": 1000,
+            "stock": 5,
+            "category": "Electronics",
+            "image": "p9.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Store 2",
+        "logo": "store2.jpg",
+        "category": "Fashion",
+        "deliveryTime": "3-4 days",
+        "rating": 4.2,
+        "reviews": 120,
+        "products": [
+          {
+            "productID": 9,
+            "name": "Product 9",
+            "price": 100,
+            "stock": 15,
+            "category": "Fashion",
+            "image": "product9.jpg"
+          },
+          {
+            "productID": 10,
+            "name": "Product 10",
+            "price": 120,
+            "stock": 25,
+            "category": "Fashion",
+            "image": "product10.jpg"
+          },
+          {
+            "productID": 11,
+            "name": "Product 11",
+            "price": 150,
+            "stock": 30,
+            "category": "Fashion",
+            "image": "product11.jpg"
+          },
+          {
+            "productID": 12,
+            "name": "Product 12",
+            "price": 200,
+            "stock": 40,
+            "category": "Fashion",
+            "image": "product12.jpg"
+          },
+          {
+            "productID": 13,
+            "name": "Product 13",
+            "price": 80,
+            "stock": 20,
+            "category": "Fashion",
+            "image": "product13.jpg"
+          },
+          {
+            "productID": 14,
+            "name": "Product 14",
+            "price": 90,
+            "stock": 25,
+            "category": "Fashion",
+            "image": "product14.jpg"
+          },
+          {
+            "productID": 15,
+            "name": "Product 15",
+            "price": 140,
+            "stock": 10,
+            "category": "Fashion",
+            "image": "product15.jpg"
+          },
+          {
+            "productID": 16,
+            "name": "Product 16",
+            "price": 200,
+            "stock": 35,
+            "category": "Fashion",
+            "image": "product16.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Store 3",
+        "logo": "store3.jpg",
+        "category": "Beauty",
+        "deliveryTime": "5-6 days",
+        "rating": 4.0,
+        "reviews": 95,
+        "products": [
+          {
+            "productID": 17,
+            "name": "Product 17",
+            "price": 30,
+            "stock": 25,
+            "category": "Beauty",
+            "image": "product17.jpg"
+          },
+          {
+            "productID": 18,
+            "name": "Product 18",
+            "price": 50,
+            "stock": 10,
+            "category": "Beauty",
+            "image": "product18.jpg"
+          },
+          {
+            "productID": 19,
+            "name": "Product 19",
+            "price": 70,
+            "stock": 20,
+            "category": "Beauty",
+            "image": "product19.jpg"
+          },
+          {
+            "productID": 20,
+            "name": "Product 20",
+            "price": 90,
+            "stock": 30,
+            "category": "Beauty",
+            "image": "p"
+          },
+          {
+            "productID": 21,
+            "name": "Product 21",
+            "price": 80,
+            "stock": 40,
+            "category": "Beauty",
+            "image": "product21.jpg"
+          },
+          {
+            "productID": 22,
+            "name": "Product 22",
+            "price": 100,
+            "stock": 50,
+            "category": "Beauty",
+            "image": "product22.jpg"
+          },
+          {
+            "productID": 23,
+            "name": "Product 23",
+            "price": 150,
+            "stock": 15,
+            "category": "Beauty",
+            "image": "product23.jpg"
+          },
+          {
+            "productID": 24,
+            "name": "Product 24",
+            "price": 200,
+            "stock": 20,
+            "category": "Beauty",
+            "image": "product24.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Store 4",
+        "logo": "store4.jpg",
+        "category": "Books",
+        "deliveryTime": "4-5 days",
+        "rating": 4.5,
+        "reviews": 100,
+        "products": [
+          {
+            "productID": 25,
+            "name": "Product 25",
+            "price": 30,
+            "stock": 20,
+            "category": "Books",
+            "image": "product25.jpg"
+          },
+          {
+            "productID": 26,
+            "name": "Product 26",
+            "price": 60,
+            "stock": 15,
+            "category": "Books",
+            "image": "product26.jpg"
+          },
+          {
+            "productID": 27,
+            "name": "Product 27",
+            "price": 40,
+            "stock": 30,
+            "category": "Books",
+            "image": "product27.jpg"
+          },
+          {
+            "productID": 28,
+            "name": "Product 28",
+            "price": 90,
+            "stock": 40,
+            "category": "Books",
+            "image": "product28.jpg"
+          },
+          {
+            "productID": 29,
+            "name": "Product 29",
+            "price": 100,
+            "stock": 25,
+            "category": "Books",
+            "image": "product29.jpg"
+          },
+          {
+            "productID": 30,
+            "name": "Product 30",
+            "price": 120,
+            "stock": 20,
+            "category": "Books",
+            "image": "product30.jpg"
+          },
+          {
+            "productID": 31,
+            "name": "Product 31",
+            "price": 110,
+            "stock": 15,
+            "category": "Books",
+            "image": "product31.jpg"
+          },
+          {
+            "productID": 32,
+            "name": "Product 32",
+            "price": 80,
+            "stock": 25,
+            "category": "Books",
+            "image": "product32.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Store 5",
+        "logo": "store5.jpg",
+        "category": "Home Decor",
+        "deliveryTime": "5-7 days",
+        "rating": 4.3,
+        "reviews": 85,
+        "products": [
+          {
+            "productID": 33,
+            "name": "Product 33",
+            "price": 50,
+            "stock": 40,
+            "category": "Home Decor",
+            "image": "product33.jpg"
+          },
+          {
+            "productID": 34,
+            "name": "Product 34",
+            "price": 30,
+            "stock": 25,
+            "category": "Home Decor",
+            "image": "product34.jpg"
+          },
+          {
+            "productID": 35,
+            "name": "Product 35",
+            "price": 60,
+            "stock": 30,
+            "category": "Home Decor",
+            "image": "product35.jpg"
+          },
+          {
+            "productID": 36,
+            "name": "Product 36",
+            "price": 75,
+            "stock": 10,
+            "category": "Home Decor",
+            "image": "product36.jpg"
+          },
+          {
+            "productID": 37,
+            "name": "Product 37",
+            "price": 50,
+            "stock": 35,
+            "category": "Home Decor",
+            "image": "product37.jpg"
+          },
+          {
+            "productID": 38,
+            "name": "Product 38",
+            "price": 45,
+            "stock": 15,
+            "category": "Home Decor",
+            "image": "product38.jpg"
+          },
+          {
+            "productID": 39,
+            "name": "Product 39",
+            "price": 80,
+            "stock": 20,
+            "category": "Home Decor",
+            "image": "product39.jpg"
+          },
+          {
+            "productID": 40,
+            "name": "Product 40",
+            "price": 95,
+            "stock": 25,
+            "category": "Home Decor",
+            "image": "product40.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Store 6",
+        "logo": "p3.jpg",
+        "category": "Toys",
+        "deliveryTime": "2-4 days",
+        "rating": 4.4,
+        "reviews": 110,
+
+        
+        "products": [
+          {
+            "productID": 41,
+            "name": "Product 41",
+            "price": 25,
+            "stock": 50,
+            "category": "Toys",
+            "image": "product41.jpg"
+          },
+          {
+            "productID": 42,
+            "name": "Product 42",
+            "price": 35,
+            "stock": 60,
+            "category": "Toys",
+            "image": "product42.jpg"
+          },
+          {
+            "productID": 43,
+            "name": "Product 43",
+            "price": 50,
+            "stock": 10,
+            "category": "Toys",
+            "image": "product43.jpg"
+          },
+          {
+            "productID": 44,
+            "name": "Product 44",
+            "price": 45,
+            "stock": 20,
+            "category": "Toys",
+            "image": "product44.jpg"
+          },
+          {
+            "productID": 45,
+            "name": "Product 45",
+            "price": 60,
+            "stock": 25,
+            "category": "Toys",
+            "image": "product45.jpg"
+          },
+          {
+            "productID": 46,
+            "name": "Product 46",
+            "price": 65,
+            "stock": 15,
+            "category": "Toys",
+            "image": "product46.jpg"
+          },
+          {
+            "productID": 47,
+            "name": "Product 47",
+            "price": 75,
+            "stock": 10,
+            "category": "Toys",
+            "image": "product47.jpg"
+          },
+          {
+            "productID": 48,
+            "name": "Product 48",
+            "price": 90,
+            "stock": 20,
+            "category": "Toys",
+            "image": "product48.jpg"
+          },
+          {
+            
+          }
+          
+        ]
+      },
+      {
+        "name": "Store 7",
+        "logo": "p6.jpg",
+        "category": "Toys",
+        "deliveryTime": "2-4 days",
+        "rating": 4.4,
+        "reviews": 110
+
+    
+      },
+      {
+        "name": "Store 8",
+        "logo": "p5.jpg",
+        "category": "Toys",
+        "deliveryTime": "2-4 days",
+        "rating": 4.4,
+        "reviews": 110
+
+        
+        
+      }
+      
+      
+    ]
+    
+  }
+  
