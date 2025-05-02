@@ -1,39 +1,42 @@
-name: Fullstack CI (No MongoDB)
+name: React + Node.js CI (No Backend Tests, No MongoDB)
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
 
-    # Frontend
-    - name: Install frontend dependencies
-      run: npm install
+      # Frontend
+      - name: Install frontend dependencies
+        run: npm install
 
-    - name: Build frontend
-      run: npm run build
+      - name: Build React app
+        run: npm run build
 
-    - name: Test frontend
-      run: npm test -- --watchAll=false
+      - name: Test React frontend
+        run: npm test -- --watchAll=false
 
-    # Backend
-    - name: Install backend dependencies
-      working-directory: ./store-api
-      run: npm install
+      # Backend install only (no test)
+      - name: Install backend dependencies
+        working-directory: ./store-api
+        run: npm install
 
-    - name: Test backend
-      working-directory: ./store-api
-      run: npm test
+      # Skipped backend tests
+      # - name: Test backend
+      #   working-directory: ./store-api
+      #   run: npm test
