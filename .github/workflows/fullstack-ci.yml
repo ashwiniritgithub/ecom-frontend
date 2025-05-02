@@ -16,10 +16,8 @@ jobs:
         ports:
           - 27017:27017
         options: >-
-          --health-cmd "mongo --eval 'db.runCommand({ ping: 1 })'"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=5
+          --bind_ip_all
+          --quiet
 
     steps:
     - name: Checkout code
@@ -30,7 +28,7 @@ jobs:
       with:
         node-version: '18'
 
-    # Frontend steps
+    # Frontend
     - name: Install frontend dependencies
       run: npm install
 
@@ -40,7 +38,7 @@ jobs:
     - name: Test frontend
       run: npm test -- --watchAll=false
 
-    # Backend steps
+    # Backend
     - name: Install backend dependencies
       working-directory: ./store-api
       run: npm install
@@ -48,5 +46,5 @@ jobs:
     - name: Test backend
       working-directory: ./store-api
       env:
-        MONGO_URL: mongodb://localhost:27017/ecom
+        MONGO_URI: mongodb://localhost:27017/ecom
       run: npm test
